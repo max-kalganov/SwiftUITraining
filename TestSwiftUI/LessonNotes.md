@@ -23,4 +23,19 @@ VStack(){
 }.padding(10)
 ```
 
-
+### Lesson 10 Task Solution
+```
+VStack(){
+    Button("Button 1"){
+        print("Button 1 tapped")
+    }
+    Button(action: {
+        print("Button2 tapped")
+    }, label: {
+        HStack(){
+            Image(systemName: "play.fill")
+            Text("Button 2")
+        }
+    })
+}
+```
